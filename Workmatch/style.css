@@ -23,17 +23,10 @@ body {
 
 /*Navbar*/
 nav {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     height: 100%;
     width: 100%;
-}
-
-#img-container-pesquisa {
-    height: 250px;
-    width: 200px;
-    margin: 10px 10px 10px 90px;
-    align-content: flex-end;
 }
 
 h6 {
@@ -45,49 +38,78 @@ h6 {
     text-align: center;
 }
 
+.div-menu {
+    float: right;
+    margin-top: -75px;
+    margin-right: 35px;
+}
+
 ul {
     list-style: none;
-    padding: 10px;
+    text-align: left;
 }
 
 li {
-    text-align: right;
-    margin-top: 10px;
+    display: inline-flex;
 }
 
 a {
     text-decoration: none;
     padding: 10px;
-    color: #3999c6;
+    color: #c66639;
+}
+
+.img-header {
+    width: 80px;
+    height: 60px;
+}
+
+h4 {
+    margin: 12px;
+    color: #c66639;
+    padding: 5px 0 0 0;
+}
+
+#login {
+    background-color: #60AED2;
+    border-radius: 5px;
+    padding: 3px;
 }
 
 /*fim*/
 
 /*container-pesquisa*/
-.container-md {
-    width: 100%;
-    height: 50%;
-    background-color: #60AED2;
-    margin-top: 10px;
-    align-content: center;
+
+.container-pesquisa {
+ margin-top: 80px;
+ margin-bottom: 80px;
+}
+
+#img-container-pesquisa {
+    height: 250px;
+    width: 200px;
+    margin: 10px 10px 10px 90px;
+    align-content: flex-end;
 }
 
 .card-body {
     background-image: url(Imagens/empresario-segurando-duas-pecas-de-quebra-cabeca.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
 }
 
 h3 {
-    padding: 0;
+    padding: 0 0 0 0;
     margin-right: 10px;
     text-align: center;
-    color: aliceblue;
+    color: #3999c6;
+    margin-top: -20px;
 }
 
 #p-container {
     text-transform: uppercase;
     text-align: center !important;
+    color: #3999c6;
 }
 
 .card-header {
@@ -125,8 +147,20 @@ h3 {
     height: 5vh;
 }
 
+/*fim*/
+
 /*container*/
 
+.container-md {
+    width: 100%;
+    height: 10vh;
+    margin-top: 20px;
+    align-content: center;
+}
+
+.h3-cards {
+    margin: 0 0 0 0;
+}
 .container-fluid {
     display: block;
     margin-top: 40px;
@@ -138,6 +172,7 @@ h3 {
     height: auto;
     width: 100%;
     align-content: center;
+    margin-top: 2px;
 }
 
 .secao4-div {
@@ -242,3 +277,5 @@ p {
     justify-content: center;
     display: grid;
 }
+
+/*fim*/
