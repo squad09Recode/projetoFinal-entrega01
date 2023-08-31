@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Login e Cadastro</title>
+  </head>
+
+	<body>
+		<div class="fundo-lado-esquerdo">
+			<div class="lado-esquerdo-text">
+				<h2>Seja bem-vindo (a)</h2>
+				<p>Selecione seu perfil e faça login em nosso site:</p>
+			</div>
+            
+			<div class="slideshow-container">
+
+
+				<div class="mySlides fade">
+				  
+				  <img src="./img/img1.png" >
+				  <div class="cap-text">Mais Rapido</div>
+				</div>
+
+				<div class="mySlides fade">
+				  
+					<img src="./img/img2.png" >
+					<div class="cap-text">Mais Fácil</div>
+				  </div>
+
+				  <div class="mySlides fade">
+					<img src="./img/img3.png" >
+					<div class="cap-text">Mais Dinamico</div>
+				  </div>
+			</div>
+		</div>
+			
+		<div class="container">
+				
+				<div class="tabs">
+                    <p class="tabs-p active" onclick="openCity(event, 'Usuario')">Usuário</p>
+                    <p class="tabs-p" onclick="openCity(event, 'Empresa')">Empresa</p>
+            
+				</div>
+
+				<div id="Usuario" class="tabcontent">
+  		
+  				<div class="form">
+						<h2>Faça login como Usuário</h2>
+						<form action="#" method="POST">
+							<input type="text" placeholder="Usuário" name="username" required>
+							<input type="password" placeholder="Senha" name="password" required>
+							<a class="button"  href="../vagas/vagas.html" type="submit">Entrar</a>
+                            <a href="../login/login.html">Ainda não é cadastrado?</a>
+							<a href="../home/home.html">Sobre nós</a>
+						</form>
+					</div>
+				</div>
+
+				<div id="Empresa" class="tabcontent">
+  				<div class="form">
+						<h2>Faça login como Empresa</h2>
+						<form action="#" method="POST">
+							<input type="text" placeholder="Usuário" name="username" required>
+							<input type="password" placeholder="Senha" name="password" required>
+							<a class="button" href="../vagas/vagas.html"type="submit">Entrar</a>
+                            <a href="../login/login.html">Ainda não é cadastrado?</a>
+							<a href="../home/home.html">Sobre nós</a>
+
+						</form>
+					</div> 
+				</div>
+			
+		</div>
+
+	</body>
+	<script src="js/script.js"></script>
+</html>

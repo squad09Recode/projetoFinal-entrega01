@@ -1,0 +1,337 @@
+*{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+body{
+  background-color: black;
+}
+.main{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  height: 100%;
+}
+.left{
+  
+}
+.vaga{
+  width: 40%;
+  height: 400px;
+  background-color: #D9D9D6;
+  border-radius: 1rem;
+  position: absolute;
+  top: 10rem;
+  left: 12%;
+  box-shadow: 0 4px 100px 0 #5063ca9c;
+  cursor: pointer;
+}
+.vaga-container{
+  display: flex;
+  flex-direction: column;
+  
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 4rem 2rem 4rem;
+  margin-top: 2rem;
+}
+.vaga-titulo-container .titulo{
+  font-size: 3rem;
+}
+.vaga-titulo-container .empresa{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.vaga-descricao-container .titulo{
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+.vaga-descricao-container .descricao{
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+.vaga-requisitos-container .titulo{
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+.vaga-requisitos-container .requisitos{
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+.menu-choice{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  height: 30px;
+  position: relative;
+  bottom: -90%;
+  left: 35%;
+  width: 30%;
+}
+.menu-choice span{
+  cursor:pointer;
+}
+
+.menu-choice p{
+  font-size: 3rem;
+}
+.right{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-color: #5062cacc;
+  border-left: 0.1rem solid #080f13;
+  padding: 5rem 2rem 1rem 2rem;
+}
+
+.meu-perfil{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+}
+.meu-perfil-title{
+  font-size: 3rem;
+}
+.meu-perfil img {
+  cursor: pointer;
+  width: 50%;
+  height: 50%;
+  border: 3px solid black;
+  border-radius: 50%;
+  padding: 2px;
+  margin-top: 20px;
+}
+
+.meu-perfil-info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4,1fr);
+  margin: 20px 0 20px 0;
+  column-gap: 30px;
+  row-gap: 10px;
+}
+.meu-perfil-info p{
+  font-size: 2rem;
+}
+
+.meu-perfil-tbl-lbl p{
+  margin-left: 20px;
+  font-size: 1.7rem;
+  text-align: left;
+}
+.perfil-edit-btn{
+  width: 200px;
+  height: 40px;
+  background-color: #5c48a4;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border: 1px solid black;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.tabs{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+.tabs p {
+  padding: 1rem;
+  cursor: pointer;
+  border-right: solid 1px #60AED2;
+  width:auto;
+  text-align: center;
+  transition: 0.3s;
+}
+.tabs p:last-child{
+  border: none;
+}
+
+.tabs p:hover{
+  background-color: #5c48a4;
+}
+
+
+.right-content{
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+#Mensagens{
+  display:none;
+}
+.mensagem-container{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.mensagem-container:hover{
+  border-top: 1px  solid ;
+  border-bottom: 1px solid;
+
+}
+.mensagem-container img{
+  width: 40px;
+  height: 40px;
+}
+.mensagem-container div{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.mensagem-content{
+  margin-top: 5px;
+  font-weight: 400 ;
+  font-size: 1.5rem;
+  text-align: right;
+}
+.mensagem-title{
+  font-size: 2rem;
+  font-weight: 550;
+}
+
+#Entregas{
+  display: none;
+}
+
+.entrega-container{
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.entrega-container:hover{
+  border-top: 1px  solid ;
+  border-bottom: 1px solid;
+
+}
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #484ca4; 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+    overflow-y: scroll;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  color: white;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.area-curriculum{
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+}
+
+.title-curriculum{
+  
+}
+
+.title-curriculum h1{
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.picture-curriculum{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.picture-curriculum img{
+  width: 30%;
+  height: 100%;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+
+.picture-curriculum p{
+  font-size: 1.5rem;
+  margin: 2px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.accordion-container{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+}
+
+.accordion{
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-top: 1px solid #080f13;
+  font-size: 2rem;
+  background-color: #283484;
+  outline: none;
+  cursor:pointer;
+}
+
+.panel{
+  display: none;
+  overflow: hidden;
+  margin-left: 40px;
+  padding: 10px;
+  width: 100%;
+}
+
+.panel-container-data{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 5px;
+}
+
+.panel-container-data span{
+  cursor: pointer;
+  margin-left: 40px;
+  width: fit-content;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

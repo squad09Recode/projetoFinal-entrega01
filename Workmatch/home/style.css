@@ -7,9 +7,9 @@
 }
 
 :root {
-    --color-1: #3999c6;
+    --color-1: #484ca4;
     --color-2: #60AED2;
-    --color-3: #c66639;
+    --color-3: #484ca4;
     --color-4: beige;
 }
 
@@ -56,7 +56,7 @@ li {
 a {
     text-decoration: none;
     padding: 10px;
-    color: #c66639;
+    
 }
 
 .img-header {
@@ -66,7 +66,7 @@ a {
 
 h4 {
     margin: 12px;
-    color: #c66639;
+    color: #484ca4;
     padding: 5px 0 0 0;
 }
 
@@ -102,14 +102,14 @@ h3 {
     padding: 0 0 0 0;
     margin-right: 10px;
     text-align: center;
-    color: #3999c6;
+    color: black;
     margin-top: -20px;
 }
 
 #p-container {
     text-transform: uppercase;
     text-align: center !important;
-    color: #3999c6;
+    color: #484ca4
 }
 
 .card-header {
@@ -208,7 +208,7 @@ p {
     padding: 20px;
     box-shadow: 2px 2px 16px 0px rgb(0 0 0 / 10%);
     border-radius: 15px;
-    background-color: #c66639;
+    background-color: #484ca4;
     transition: all .5s ease;
     justify-content: center;
     height: auto;
@@ -238,7 +238,7 @@ footer {
 }
 
 #footer_content {
-    background-color: #60AED2;
+    background-color: #484ca4;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 3rem 3.5rem;
@@ -278,7 +278,7 @@ footer p {
 }
 
 .footer-list .footer-link:hover {
-    color: #3999c6;
+    color: #484ca4;
 }
 
 #footer_copyright {
