@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/script.js"></script>
+    <script src="../js/login.js"></script>
     <title>Cadastro de Usuário e Empresa</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
     <div class="fundo-lado-esquerdo">
-        <img class="imagem" src="./img/image.png">
+        <img class="imagem" src="../img/image.png">
     </div>
     <div class="container">
         <div class="tabs">
@@ -35,9 +38,10 @@
                 
                 <label for="empresa">Empresa:</label>
                 <input type="text" id="empresa" name="empresa" required>
-                
                 <button onclick="proximaTelaEmpresa()" type="button">Proximo</button>
-                <a class="link-to-login" href="../cadastro/cadastro.html">Ja é cadastrado?</a>
+                <a class="link-to-login" href="cadastro.html">Ja é cadastrado?</a>
+                
+
             </form>
     
             <form action="#" method="post" id="empresa-forms-2">
@@ -67,7 +71,7 @@
                 <input type="text" id="empresa" name="empresa" required>
                 
                 <button onclick="proximaTelaUsuario()" type="button">Proximo</button>
-                <a class="link-to-login" href="../cadastro/cadastro.html">Ja é cadastrado?</a>
+                <a class="link-to-login" href="cadastro.html">Ja é cadastrado?</a>
             </form>
     
             <form action="#" method="post" id="forms-2">
@@ -82,9 +86,6 @@
                
             </form>
         </div>
-
-       
-
-    </div>
+     </div>
 </body>
 </html>

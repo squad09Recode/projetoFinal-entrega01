@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arvo', serif;
 }
 
 :root {
@@ -29,19 +29,17 @@ nav {
     width: 100%;
 }
 
-h6 {
-    color: #3999c6;
-    text-transform: none;
-    display: grid;
-    margin-top: -30px;
-    margin-left: 40px;
-    text-align: center;
+nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .div-menu {
-    float: right;
-    margin-top: -75px;
-    margin-right: 35px;
+   float: right;
+   margin-right: 60px;
+   margin-top: -75px;
 }
 
 ul {
@@ -56,7 +54,34 @@ li {
 a {
     text-decoration: none;
     padding: 10px;
-    
+    color: var(--color-3);
+}
+
+.img-header {
+    width: 80px;
+    height: 60px;
+    margin-left: 60px;
+}
+
+h4 {
+    margin: 12px;
+    color: var(--color-3);
+    padding: 5px 0 0 0;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+}
+
+li {
+    display: inline-flex;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    color: var(--color-3);
 }
 
 .img-header {
@@ -66,23 +91,17 @@ a {
 
 h4 {
     margin: 12px;
-    color: #484ca4;
+    color: var(--color-3);
     padding: 5px 0 0 0;
 }
-
-#login {
-    border-color: #c66639;
-    border-radius: 5%;
-    padding: 3%;
-}
-
 /*fim*/
 
 /*container-pesquisa*/
 
 .container-pesquisa {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
 }
 
 #img-container-pesquisa {
@@ -93,17 +112,25 @@ h4 {
 }
 
 .card-body {
-    background-image: url(Imagens/empresario-segurando-duas-pecas-de-quebra-cabeca.jpg);
+    background-image: url(../img/empresario-segurando-duas-pecas-de-quebra-cabeca.jpg);
     background-size: cover;
     background-position: center;
 }
 
-h3 {
-    padding: 0 0 0 0;
-    margin-right: 10px;
-    text-align: center;
-    color: black;
-    margin-top: -20px;
+.card-body p {
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: #000;
+    font-size: 1.3em;
+    color: #c66639;
+    padding: 1.0px;
+}
+
+.card-body h5 {
+    color: var(--color-3);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    font-size: 3em;
+    color: #c66639;
 }
 
 #p-container {
@@ -114,12 +141,6 @@ h3 {
 
 .card-header {
     background-color: var(--color-1);
-}
-
-.card-title {
-    color: var(--color-2);
-    text-decoration: solid white;
-    font-size: xx-large;
 }
 
 .card-text {
@@ -135,25 +156,27 @@ h3 {
     margin-top: 15px;
     text-align: center;
     border-radius: 10px;
-    border-color: var(--color-1);
+    border-color: var(--color-3);
 }
 
 .btn-header {
     color: var(--color-4);
-    background-color: var(--color-2);
+    background-color: var(--color-3);
     border-color: var(--color-1);
     border-radius: 10px;
     width: 10%;
     height: 5vh;
+    color: var(--color-3);
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: #000;
+    color: #c66639;
 }
-
 /*fim*/
 
 /*container*/
 
 .container-md {
     width: 100%;
-    height: 10vh;
     margin-top: 20px;
     align-content: center;
 }
@@ -162,11 +185,12 @@ h3 {
     margin: 0 0 0 0;
 }
 
-.container-fluid {
-    display: block;
-    margin-top: 40px;
-    text-align: 100px;
+.container-md h3 {
     color: var(--color-3);
+    padding: 0 0 0 0;
+    margin-right: 10px;
+    text-align: center;
+    margin-top: -20px;
 }
 
 .secao4 {
@@ -190,15 +214,16 @@ h3 {
 .secao4-div h3,
 p {
     padding: 10px 0px 0px 0px !important;
-    color: white;
-
+    color: var(--color-4);
 }
 
 .secao4-div img {
     width: 100%;
     height: auto;
 }
-
+.h3-cards a {
+    color:var(--color-4);
+}
 .secao4-div-1,
 .secao4-div-2,
 .secao4-div-3 {
@@ -238,10 +263,11 @@ footer {
 }
 
 #footer_content {
-    background-color: #484ca4;
+    background-color: var(--color-1);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 3rem 3.5rem;
+    padding: 2.5rem 2rem;
+    margin: 75px 0px 0px 0px;
 }
 
 #footer_social_media {
@@ -268,12 +294,21 @@ footer {
     flex-direction: column;
 }
 
+footer h3 {
+    color: var(--color-3);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    font-size: 2em;
+    color: #c66639;
+}
+
 footer p {
-    color:#c66639;
+    color: var(--color-4);
+   
 }
 
 .footer-list .footer-link {
-    color: #c66639;
+    color: var(--color-4);
     transition: all 0.4s;
 }
 
@@ -284,8 +319,9 @@ footer p {
 #footer_copyright {
     display: flex;
     justify-content: center;
-    background-color: #60AED2;
-    font-size: 100;
+    background-color: var(--color-3);
+    font-size: 13px;
+    color:var(--color-4)
 }
 
 @media screen and (max-width: 768px) {

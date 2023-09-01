@@ -5,18 +5,40 @@
 body{
   background-color: black;
 }
+
+:root {
+  --color-1: #484ca4;
+  --color-2: #60AED2;
+  --color-3: #484ca4;
+  --color-4: beige;
+}
+.btn-header {
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+  background-color: #5c48a4;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border: 1px solid black;
+  border-radius: 2rem;
+  cursor: pointer;
+  color:var(--color-4);
+}
+.btn-header a {
+  color:var(--color-4);
+  text-decoration: none;
+  font-size: 18px;
+}
 .main{
   display: grid;
   grid-template-columns: 70% 30%;
   height: 100%;
 }
-.left{
-  
-}
 .vaga{
   width: 40%;
   height: 400px;
-  background-color: #D9D9D6;
+  background-color:var(--color-4);
   border-radius: 1rem;
   position: absolute;
   top: 10rem;
@@ -78,7 +100,7 @@ body{
   width: 100%;
   height: 100%;
   min-height: 100%;
-  background-color: #5062cacc;
+  background-color:var(--color-3);
   border-left: 0.1rem solid #080f13;
   padding: 5rem 2rem 1rem 2rem;
 }
@@ -91,6 +113,7 @@ body{
 }
 .meu-perfil-title{
   font-size: 3rem;
+  color:var(--color-4);
 }
 .meu-perfil img {
   cursor: pointer;
@@ -109,6 +132,7 @@ body{
   margin: 20px 0 20px 0;
   column-gap: 30px;
   row-gap: 10px;
+  color:var(--color-4);
 }
 .meu-perfil-info p{
   font-size: 2rem;
@@ -129,6 +153,7 @@ body{
   border: 1px solid black;
   border-radius: 2rem;
   cursor: pointer;
+  color:var(--color-4);
 }
 
 .tabs{
@@ -143,6 +168,7 @@ body{
   width:auto;
   text-align: center;
   transition: 0.3s;
+  color:var(--color-4);
 }
 .tabs p:last-child{
   border: none;
@@ -258,9 +284,6 @@ body{
   margin-top: 3%;
 }
 
-.title-curriculum{
-  
-}
 
 .title-curriculum h1{
   font-size: 4rem;

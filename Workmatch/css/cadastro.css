@@ -8,8 +8,15 @@ p{
     margin: 0px;
 }
 
+:root {
+  --color-1: #484ca4;
+  --color-2: #60AED2;
+  --color-3: #484ca4;
+  --color-4: beige;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arvo', serif;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -27,11 +34,29 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color:var(--color-4);
   }
   .lado-esquerdo-text h2{
     margin-top: 30px;
     margin-bottom: 0;
     font-size: 40px;
+  }
+  .btn-header {
+    margin-top: 30px;
+    width: 50px;
+    height: 30px;
+    background-color: var(--color-1);
+    text-align: center;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color:var(--color-4);
+  }
+  .btn-header a {
+    color:var(--color-4);
+    text-decoration: none;
+    font-size: 13px;
   }
   .lado-esquerdo-text p{
     font-size: 15px;
